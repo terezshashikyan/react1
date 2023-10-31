@@ -1,0 +1,54 @@
+.TodosAddForm {
+    display: flex;
+    width: 100%;
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font: 15px/1 'Open Sans', sans-serif;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 80%;
+        background-color: #ddd;
+        border: 1px solid #85BCAD;
+        padding: 18px 12px 18px 12px;
+        border-radius: 3px;
+        box-shadow: none;
+        outline: none;
+        margin: 0;
+        box-sizing: border-box; 
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+            }
+    &__button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font: 15px/1 'Open Sans', sans-serif;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 20%;
+        max-width: 200px;
+        background-color: rgba(0, 104, 74, 0.78);
+        border: 1px solid #85BCAD;
+        padding: 18px 12px 18px 12px;
+        border-radius: 3px;
+        box-shadow: none;
+        outline: none;
+        margin: 0;
+        box-sizing: border-box; 
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+    }
+}

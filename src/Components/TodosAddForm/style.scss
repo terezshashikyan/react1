@@ -52,4 +52,7 @@
         letter-spacing: 0.64px;
         cursor: pointer;
     }
+    &__button:hover {
+        background-color: gray;
+    }
 }

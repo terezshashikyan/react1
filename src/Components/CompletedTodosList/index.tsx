@@ -1,7 +1,7 @@
-import {ITodo, TTodosList} from "../../types";
 import { FC, useState } from "react";
-import {ArrowDropDownRounded, ArrowDropUpRounded} from '@mui/icons-material';
+import {ITodo, TTodosList} from "../../types";
 import TodosListItem from "../TodosListItem";
+import {ArrowDropDownRounded, ArrowDropUpRounded} from '@mui/icons-material';
 
 import './style.scss';
 

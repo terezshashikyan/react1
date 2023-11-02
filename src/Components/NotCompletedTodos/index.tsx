@@ -1,5 +1,5 @@
-import {ITodo, TTodosList} from "../../types";
 import { FC } from "react";
+import {ITodo, TTodosList} from "../../types";
 import TodosListItem from "../TodosListItem";
 
 import './style.scss';

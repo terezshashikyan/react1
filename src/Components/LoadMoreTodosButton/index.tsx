@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { TLoadMoreTodosButton } from '../../types';
+
 import './style.scss';
 
 const LoadMoreTodosButton:FC<TLoadMoreTodosButton> = ({handleLoadMore}) => (

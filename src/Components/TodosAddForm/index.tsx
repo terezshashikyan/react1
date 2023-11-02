@@ -14,13 +14,14 @@ const TodosAddForm:FC<TTodosAddFormProps> = ({addTodo}) => {
     const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>)=>{
         e.preventDefault();
         if(title.trim()){
-            addTodo(title)
+            addTodo(title);
+            setTitle('')
         }
     }
 
     return (
        <form className='TodosAddForm' onSubmit={handleSubmit}>
-        <input type="text" placeholder = 'To Do Text' className="TodosAddForm__input" id = 'TodosAddFormInput' onChange={handleChange}/>
+        <input type="text" placeholder = 'To Do Text' value = {title} className="TodosAddForm__input" id = 'TodosAddFormInput' onChange={handleChange}/>
         <button type='submit' className="TodosAddForm__button">Add</button>
        </form> 
     )

@@ -2,6 +2,8 @@
     display: flex;
     gap: 6px;
     &__text {
+        display: flex;
+        align-items: center;
         text-align: start;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -53,5 +55,41 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.64px;
+        cursor: pointer;
+    }
+    &__checkbox {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    &__editItemInput {
+        text-align: start;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font: 15px/1 'Open Sans', sans-serif;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 80%;
+        max-height: 100%;
+        background-color: rgb(189, 188, 188);
+        border: none;
+        padding: 18px 12px 18px 12px;
+        border-radius: 3px;
+        box-shadow: none;
+        outline: none;
+        margin: 0;
+        box-sizing: border-box;   
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+    }
+    &__completed{
+        text-decoration:line-through;
     }
 }

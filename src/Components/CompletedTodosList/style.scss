@@ -1,0 +1,9 @@
+.todosList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    &__show {
+        display: flex;
+        align-items: center;
+    }
+}

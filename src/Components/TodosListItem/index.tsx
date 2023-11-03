@@ -4,7 +4,12 @@ import { EditRounded, ClearRounded, CheckRounded } from "@mui/icons-material";
 
 import "./style.scss";
 
-const TodosListItem: FC<TTodosListItem> = ({ todo, deleteTodo, editTodo, toggleCompleted}) => {
+const TodosListItem: FC<TTodosListItem> = ({
+  todo,
+  deleteTodo,
+  editTodo,
+  toggleCompleted,
+}) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(todo.title);
 
@@ -14,7 +19,7 @@ const TodosListItem: FC<TTodosListItem> = ({ todo, deleteTodo, editTodo, toggleC
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTitle(event.target.value);
-  };  
+  };
 
   const setIsEditingFalse = () => {
     editTodo(todo.id, newTitle);
@@ -22,11 +27,28 @@ const TodosListItem: FC<TTodosListItem> = ({ todo, deleteTodo, editTodo, toggleC
   };
 
   return (
-    <div key={todo.id} className= {todo.completed? 'todosListItem todosListItem__completed':'todosListItem'}>
+    <div
+      key={todo.id}
+      className={
+        todo.completed
+          ? "todosListItem todosListItem__completed"
+          : "todosListItem"
+      }
+    >
       <button className="todosListItem__text">
-        <input type="checkbox" checked = {todo.completed} onClick={() => toggleCompleted(todo.id)} className = 'todosListItem__checkbox'/>
+        <input
+          type="checkbox"
+          checked={todo.completed}
+          onClick={() => toggleCompleted(todo.id)}
+          className="todosListItem__checkbox"
+        />
         {isEditing ? (
-          <input type="text" value={newTitle} onChange={handleChange} className = 'todosListItem__editItemInput'/>
+          <input
+            type="text"
+            value={newTitle}
+            onChange={handleChange}
+            className="todosListItem__editItemInput"
+          />
         ) : (
           <span>{todo.title}</span>
         )}

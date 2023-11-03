@@ -28,5 +28,5 @@ export type TTodosList = {
 }
 
 export type TLoadMoreTodosButton = {
-    handleLoadMore: () => void;
+    handleLoadMore:() => void;
 }
